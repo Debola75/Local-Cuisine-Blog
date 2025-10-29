@@ -1,1 +1,145 @@
- 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Taste the World — Local Cuisine Blog</title>
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./asset/index.css">
+    <link rel="shortcut icon" href="./blog-img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Exploring traditional recipes, local ingredients, and street food culture from around the world." />
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="nav-wrap" id="navWrap">
+                <a class="brand" href="#">
+                    <div class="logo">TW</div>
+                    <div>
+                        <h1>Taste the World</h1>
+                        <div class="muted" style="font-size:12px">Discover Local Flavors</div>
+                    </div>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+                    ☰
+                </button>
+
+                <nav class="primary" id="primaryNav" role="navigation" aria-label="Main">
+                    <a href="about.html">About</a>
+                    <a href="recipes.html">Recipe</a>
+                    <a href="culture.html">Culture & Stories</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-card">
+                    <div class="hero-visual" style="background-image:url('./blog-img/2e88b16b-a2a6-4d99-ac2b-4e68ee9c1e3d.jpg');">
+                        <div class="tagline">
+                            <h2>Taste the Heart of Local Kitchens</h2>
+                            <p>Exploring traditional recipes, local ingredients, and street food culture from across the globe.</p>
+                        </div>
+                    </div>
+
+                    <p class="intro">This blog highlights the stories behind beloved dishes, how ingredients shape regional flavors, and where to experience them — from family tables to bustling night markets.</p>
+
+                    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+                        <a class="btn" href="#featured">Featured Posts</a>
+                        <a href="recipes.html" style="color:var(--muted);align-self:center;text-decoration:none">Browse Recipes →</a>
+                    </div>
+                </div>
+
+                <aside class="hero-card" aria-labelledby="signupHeading">
+                    <h3 id="signupHeading" style="margin-top:0;color:#fff">Join our journey</h3>
+                    <p class="muted">Subscribe for weekly posts about recipes, food culture, and handpicked local eateries.</p>
+
+                    <form style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+                        <input aria-label="Email" type="email" placeholder="you@example.com" style="flex:1;padding:10px;border-radius:10px;border:0" />
+                        <button type="submit" class="btn" style="padding:10px 12px">Subscribe</button>
+                    </form>
+
+                    <div style="margin-top:16px" class="muted">
+                        Featured this week:
+                        <ul style="margin:8px 0 0 18px;padding:0">
+                            <li>Nigerian Jollof Rice — street & family variations</li>
+                            <li>Peruvian Ceviche — coastal techniques</li>
+                            <li>Vietnamese Banh Mi — from bakers to vendors</li>
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+
+            <section id="featured" style="margin-top:22px">
+                <h2 style="margin:0 0 12px 0">Featured Posts</h2>
+                <div class="featured">
+                    <article class="post" aria-labelledby="p1">
+                        <img src="./blog-img/Jollof-Rice.jpg" alt="Plate of Jollof rice" />
+                        <div class="post-body">
+                            <h3 id="p1">Jollof Rice: A West African Staple</h3>
+                            <p class="muted">How spice blends and cooking technique create national debates and family traditions.</p>
+                            <a class="readmore" href="#">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="post" aria-labelledby="p2">
+                        <img src="./blog-img/Ceviche.jpg" alt="Ceviche with lime" />
+                        <div class="post-body">
+                            <h3 id="p2">Coastal Ceviche: From Market to Plate</h3>
+                            <p class="muted">A guide to sourcing fresh seafood and the citrus techniques that define ceviche.</p>
+                            <a class="readmore" href="#">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="post" aria-labelledby="p3">
+                        <img src="./blog-img/Bánh-Mì.jpg" alt="Banh mi sandwich" >
+                        <div class="post-body">
+                            <h3 id="p3">Banh Mi: French Influence & Local Ingredients</h3>
+                            <p class="muted">The fusion history behind the beloved Vietnamese sandwich and its regional variations.</p>
+                            <a class="readmore" href="#">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="post" aria-labelledby="p4">
+                        <img src="./blog-img/Espetinhos.jpg" alt="Street food skewers" />
+                        <div class="post-body">
+                            <h3 id="p4">Street Skewers Around the World</h3>
+                            <p class="muted">Skewered favorites from yakitori to kebabs — quick techniques, bold marinades.</p>
+                            <a class="readmore" href="#">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-row">
+                <div>
+                    <strong>Taste the World</strong>
+                    <div class="muted" style="font-size:14px">Exploring local flavors everywhere</div>
+                </div>
+
+                <div class="muted" style="font-size:14px">
+                    Contact: <a href="mailto:hello@tastetheworld.example" style="color:inherit;text-decoration:none">adebolaogunsanya75@gmail.com</a>
+                </div>
+
+                <div class="social" aria-label="Social links">
+                    <a href="https://github.com/Debola75" title="Github"><li class="fab fa-github"></li></a>
+                    <a href="https://linkedin.com/in/adebola-ogunsanya-829a52293" title="Linkedin"><li class="fab fa-linkedin"></li></a>
+                    <a href="https://wa.me/+2349049092401" title="Whatsapp"><li class="fab fa-whatsapp"></li></a>
+                </div>
+            </div>
+
+            <div style="margin-top:12px;text-align:center;color:var(--muted);font-size:13px">
+                © <span id="yr"></span> Taste the World — All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="./asset/index.js"></script>
+</body>
+</html>
