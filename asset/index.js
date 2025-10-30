@@ -1,11 +1,8 @@
 // Simple menu toggle for small screens
-(function(){
+function menuToggle(){
     const toggle = document.getElementById('menuToggle');
     const navWrap = document.getElementById('navWrap');
     const primary = document.getElementById('primaryNav');
-    const yr = document.getElementById('yr');
-
-    yr.textContent = new Date().getFullYear();
 
     function setExpanded(state){
         toggle.setAttribute('aria-expanded', state);
@@ -22,9 +19,11 @@
     primary.querySelectorAll('a').forEach(a=>{
         a.addEventListener('click', ()=> setExpanded('false'));
     });
+    
 
     // close on escape
     document.addEventListener('keydown', (e)=> {
         if(e.key === 'Escape') setExpanded('false');
     });
-})();
+}
+menuToggle();
