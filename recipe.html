@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="./blog-img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/recipe.css">
+    <title>Local Cuisine — Recipes</title>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="nav-wrap" id="navWrap">
+                <a class="brand" href="#">
+                    <div class="logo">TW</div>
+                    <div>
+                        <h1>Taste the World</h1>
+                        <div class="muted" style="font-size:12px">Discover Local Flavors</div>
+                    </div>~
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+                    ☰
+                </button>
+
+                <nav class="primary" id="primaryNav" role="navigation" aria-label="Main">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="culture.html">Culture & Stories</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Soups -->
+            <section class="category" data-category="soups">
+                <h2>Soups</h2>
+                <div class="grid">
+                    <article class="card" data-name="Tom Yum" data-desc="Spicy Thai sour soup with shrimp" data-cat="soups">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?tom-yum,soup" alt="Tom Yum Soup">
+                        <div class="card-body">
+                            <h3 class="card-title">Tom Yum</h3>
+                            <p class="card-desc">A fragrant and spicy Thai soup with lemongrass, lime and shrimp.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#tom-yum">View Recipe</a>
+                                <div class="meta">Thailand • 30m</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" data-name="Minestrone" data-desc="Hearty Italian vegetable soup" data-cat="soups">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?minestrone,soup" alt="Minestrone Soup">
+                        <div class="card-body">
+                            <h3 class="card-title">Minestrone</h3>
+                            <p class="card-desc">Comforting Italian soup loaded with seasonal vegetables and pasta.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#minestrone">View Recipe</a>
+                                <div class="meta">Italy • 45m</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Street Food -->
+            <section class="category" data-category="street">
+                <h2>Street Food</h2>
+                <div class="grid">
+                    <article class="card" data-name="Tacos al Pastor" data-desc="Marinated pork tacos from Mexico" data-cat="street">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?tacos,street-food" alt="Tacos al Pastor">
+                        <div class="card-body">
+                            <h3 class="card-title">Tacos al Pastor</h3>
+                            <p class="card-desc">Vibrant Mexican tacos with achiote-marinated pork and fresh pineapple.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#tacos-al-pastor">View Recipe</a>
+                                <div class="meta">Mexico • 25m</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" data-name="Takoyaki" data-desc="Japanese octopus balls" data-cat="street">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?takoyaki,japanese" alt="Takoyaki">
+                        <div class="card-body">
+                            <h3 class="card-title">Takoyaki</h3>
+                            <p class="card-desc">Crispy on the outside, soft inside savory batter filled with octopus.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#takoyaki">View Recipe</a>
+                                <div class="meta">Japan • 40m</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Snacks -->
+            <section class="category" data-category="snacks">
+                <h2>Snacks</h2>
+                <div class="grid">
+                    <article class="card" data-name="Samosa" data-desc="Crispy fried pastry with spiced potatoes" data-cat="snacks">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?samosa,india" alt="Samosa">
+                        <div class="card-body">
+                            <h3 class="card-title">Samosa</h3>
+                            <p class="card-desc">Golden pockets of spiced potatoes and peas—perfect for dipping.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#samosa">View Recipe</a>
+                                <div class="meta">India • 35m</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card" data-name="Arepas" data-desc="Corn pockets from Venezuela/Colombia" data-cat="snacks">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?arepa" alt="Arepas">
+                        <div class="card-body">
+                            <h3 class="card-title">Arepas</h3>
+                            <p class="card-desc">Griddled corn cakes that can be stuffed or topped with cheese and meats.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#arepas">View Recipe</a>
+                                <div class="meta">Venezuela • 25m</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Desserts -->
+            <section class="category" data-category="desserts">
+                <h2>Desserts</h2>
+                <div class="grid">
+                    <article class="card" data-name="Crème Brûlée" data-desc="Creamy custard with caramelized sugar" data-cat="desserts">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?creme-brulee,dessert" alt="Crème Brûlée">
+                        <div class="card-body">
+                            <h3 class="card-title">Crème Brûlée</h3>
+                            <p class="card-desc">Silky custard topped with a crackling layer of caramelized sugar.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#creme-brulee">View Recipe</a>
+                                <div class="meta">France • 50m</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card" data-name="Mochi" data-desc="Chewy rice cake with sweet filling" data-cat="desserts">
+                        <img class="thumb" src="https://source.unsplash.com/600x400/?mochi,dessert" alt="Mochi">
+                        <div class="card-body">
+                            <h3 class="card-title">Mochi</h3>
+                            <p class="card-desc">Delicate Japanese rice cake often filled with sweet bean paste or ice cream.</p>
+                            <div class="card-footer">
+                                <a class="btn" href="recipe-detail.html#mochi">View Recipe</a>
+                                <div class="meta">Japan • 45m</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-row">
+                <div>
+                    <strong>Taste the World</strong>
+                    <div class="muted" style="font-size:14px">Exploring local flavors everywhere</div>
+                </div>
+
+                <div class="muted" style="font-size:14px">
+                    Contact: <a href="mailto:adebolaogunsanya75@gmail.com" style="color:inherit;text-decoration:none">adebolaogunsanya75@gmail.com</a>
+                </div>
+
+                <div class="social" aria-label="Social links">
+                    <a href="https://github.com/Debola75" title="Github"><li class="fab fa-github"></li></a>
+                    <a href="https://linkedin.com/in/adebola-ogunsanya-829a52293" title="Linkedin"><li class="fab fa-linkedin"></li></a>
+                    <a href="https://wa.me/+2349049092401" title="Whatsapp"><li class="fab fa-whatsapp"></li></a>
+                </div>
+            </div>
+
+            <div style="margin-top:12px;text-align:center;color:var(--muted);font-size:13px">
+                © <span id="yr"></span> Taste the World — All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="./asset/index.js"></script>
+</body>
+</html>
