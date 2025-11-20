@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./blog-img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/recipe-detail.css">
+    <title>Recipe Detail Page</title>
+    <style>
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="nav-wrap" id="navWrap">
+                <a class="brand" href="#">
+                    <div class="logo">TW</div>
+                    <div>
+                        <h1>Taste the World</h1>
+                        <div class="muted" style="font-size:12px">Discover Local Flavors</div>
+                    </div>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+                    ☰
+                </button>
+
+                <nav class="primary" id="primaryNav" role="navigation" aria-label="Main">
+                    <a href="recipe.html"><b>Back</b></a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+        <!-- Recipe Selector -->
+        <div class="recipe-selector">
+            <button class="recipe-btn active" onclick="showRecipe('tom-yum')">Tom Yum</button>
+            <button class="recipe-btn" onclick="showRecipe('minestrone')">Minestrone</button>
+            <button class="recipe-btn" onclick="showRecipe('tacos')">Tacos Al Pastor</button>
+            <button class="recipe-btn" onclick="showRecipe('takoyaki')">Takoyaki</button>
+            <button class="recipe-btn" onclick="showRecipe('samosa')">Samosa</button>
+            <button class="recipe-btn" onclick="showRecipe('arepas')">Arepas</button>
+            <button class="recipe-btn" onclick="showRecipe('creme-brulee')">Crème Brûlée</button>
+            <button class="recipe-btn" onclick="showRecipe('mochi')">Mochi</button>
+        </div>
+
+        <!-- Tom Yum Recipe -->
+        <article id="tom-yum" class="recipe-article">
+            <header>
+                <h1>Tom Yum</h1>
+            </header>
+
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Tom+Yum" alt="Tom Yum Soup">
+                <figcaption>A fragrant and spicy Thai soup</figcaption>
+            </figure>
+
+            <section>
+                <h2>About Tom Yum</h2>
+                <p class="intro">
+                    Tom Yum is one of Thailand's most iconic dishes, known for its hot and sour flavor profile. This aromatic soup has been a staple of Thai cuisine for centuries and is celebrated worldwide for its perfect balance of spicy, sour, and savory elements.
+                </p>
+            </section>
+
+            <section>
+                <h2>Ingredients</h2>
+                <div class="ingredients-grid">
+                    <div class="ingredient-item">
+                        <h3>Aromatics</h3>
+                        <ul>
+                            <li>4 stalks lemongrass, bruised</li>
+                            <li>4 slices galangal</li>
+                            <li>3-4 kaffir lime leaves</li>
+                        </ul>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Protein & Broth</h3>
+                        <ul>
+                            <li>1 lb shrimp or chicken</li>
+                            <li>4 cups vegetable or chicken broth</li>
+                        </ul>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Seasonings</h3>
+                        <ul>
+                            <li>3 tbsp fish sauce</li>
+                            <li>2 tbsp lime juice</li>
+                            <li>1-2 red chilies, sliced</li>
+                            <li>1 tbsp Thai chili paste</li>
+                        </ul>
+                    </div>
+                    <div class="ingredient-item">
+                        <h3>Vegetables</h3>
+                        <ul>
+                            <li>8 oz mushrooms, sliced</li>
+                            <li>1 medium tomato, quartered</li>
+                            <li>2 tbsp cilantro</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Bring broth to a boil in a large pot</li>
+                    <li>Add lemongrass, galangal, and kaffir lime leaves</li>
+                    <li>Simmer for 5 minutes to infuse flavors</li>
+                    <li>Add Thai chili paste and stir well</li>
+                    <li>Add shrimp or chicken and cook for 3-5 minutes</li>
+                    <li>Add mushrooms and tomato, simmer for 2 minutes</li>
+                    <li>Season with fish sauce and lime juice</li>
+                    <li>Garnish with cilantro and chilies</li>
+                    <li>Serve hot in bowls</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Tips & Variations</h2>
+                <div class="tips">
+                    <h3>🔥 Cooking Tips</h3>
+                    <ul>
+                        <li>Don't skip bruising the lemongrass—it releases essential oils</li>
+                        <li>Add lime juice just before serving for maximum flavor</li>
+                        <li>Fresh ingredients make a huge difference in taste</li>
+                        <li>Remove aromatics before serving if you prefer a cleaner broth</li>
+                    </ul>
+                </div>
+                <div class="tips">
+                    <h3>🥘 Variations</h3>
+                    <ul>
+                        <li><strong>Vegetarian:</strong> Replace protein with tofu and use vegetable broth</li>
+                        <li><strong>Creamier:</strong> Add coconut milk for a richer texture</li>
+                        <li><strong>Extra Spicy:</strong> Add more Thai chili paste or fresh chilies</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Related Recipes</h2>
+                <div class="related-recipes">
+                    <article class="recipe-card" onclick="showRecipe('minestrone')">
+                        <img src="https://via.placeholder.com/200x150?text=Minestrone" alt="Minestrone">
+                        <div class="recipe-card-content">
+                            <h4>Minestrone</h4>
+                            <p>Italian vegetable soup</p>
+                        </div>
+                    </article>
+                    <article class="recipe-card" onclick="showRecipe('mochi')">
+                        <img src="https://via.placeholder.com/200x150?text=Mochi" alt="Mochi">
+                        <div class="recipe-card-content">
+                            <h4>Mochi</h4>
+                            <p>Japanese rice cake</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="comments-section">
+                <h2>Comments</h2>
+                <div class="comment">
+                    <div class="comment-author">Sarah M.</div>
+                    <div class="comment-date">2 weeks ago</div>
+                    <p>Absolutely delicious! The lemongrass really makes all the difference.</p>
+                </div>
+                <form>
+                    <h3>Leave a Comment</h3>
+                    <input type="text" placeholder="Your Name" required>
+                    <textarea placeholder="Your Comment..." rows="4" required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>
+        </article>
+
+        <!-- Minestrone Recipe (Hidden by default) -->
+        <article id="minestrone" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Minestrone</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Minestrone" alt="Minestrone Soup">
+                <figcaption>A hearty Italian vegetable soup</figcaption>
+            </figure>
+            <section>
+                <h2>About Minestrone</h2>
+                <p class="intro">Minestrone is a traditional Italian soup packed with seasonal vegetables, beans, and pasta. Its name means "big soup" in Italian, and it's a perfect comfort food that varies by region and season.</p>
+            </section>
+            <!-- Add similar structure for other sections -->
+        </article>
+
+        <!-- Additional recipes follow the same pattern -->
+        <!-- Tacos Al Pastor -->
+        <article id="tacos" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Tacos Al Pastor</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Tacos+Al+Pastor" alt="Tacos Al Pastor">
+                <figcaption>Mexican street food classic</figcaption>
+            </figure>
+            <section>
+                <h2>About Tacos Al Pastor</h2>
+                <p class="intro">Tacos Al Pastor originated in Mexico influenced by Middle Eastern cuisine. These marinated pork tacos are cooked on a vertical spit and served with pineapple.</p>
+            </section>
+        </article>
+
+        <!-- Takoyaki -->
+        <article id="takoyaki" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Takoyaki</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Takoyaki" alt="Takoyaki">
+                <figcaption>Japanese octopus balls</figcaption>
+            </figure>
+            <section>
+                <h2>About Takoyaki</h2>
+                <p class="intro">Takoyaki are delicious Japanese snacks made with octopus, batter, and cooked in special takoyaki pans. They're crispy on the outside and creamy inside.</p>
+            </section>
+        </article>
+
+        <!-- Samosa -->
+        <article id="samosa" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Samosa</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Samosa" alt="Samosa">
+                <figcaption>Indian fried pastry</figcaption>
+            </figure>
+            <section>
+                <h2>About Samosa</h2>
+                <p class="intro">Samosas are crispy triangular pastries filled with spiced potatoes and peas. Popular across South Asia, they're perfect as an appetizer or snack.</p>
+            </section>
+        </article>
+
+        <!-- Arepas -->
+        <article id="arepas" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Arepas</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Arepas" alt="Arepas">
+                <figcaption>Venezuelan corn bread</figcaption>
+            </figure>
+            <section>
+                <h2>About Arepas</h2>
+                <p class="intro">Arepas are a staple in Venezuelan and Colombian cuisine. These versatile corn cakes can be filled with cheese, meat, or beans.</p>
+            </section>
+        </article>
+
+        <!-- Crème Brûlée -->
+        <article id="creme-brulee" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Crème Brûlée</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Creme+Brulee" alt="Crème Brûlée">
+                <figcaption>French caramelized custard dessert</figcaption>
+            </figure>
+            <section>
+                <h2>About Crème Brûlée</h2>
+                <p class="intro">Crème Brûlée is an elegant French dessert featuring a creamy custard topped with a caramelized sugar crust. It's perfect for special occasions.</p>
+            </section>
+        </article>
+
+        <!-- Mochi -->
+        <article id="mochi" class="recipe-article" style="display:none;">
+            <header>
+                <h1>Mochi</h1>
+            </header>
+            <figure>
+                <img src="https://via.placeholder.com/400x300?text=Mochi" alt="Mochi">
+                <figcaption>Japanese rice cake</figcaption>
+            </figure>
+            <section>
+                <h2>About Mochi</h2>
+                <p class="intro">Mochi is a traditional Japanese treat made from glutinous rice. These chewy, soft balls come in various flavors and are enjoyed year-round.</p>
+            </section>
+        </article>
+    </main>
+    </div>
+
+    <script src="./asset/recipe-detail.js"></script>
+</body>
+</html>
