@@ -46,3 +46,24 @@ function menuToggle(){
     });
 }
 menuToggle();
+
+document.addEventListener("DOMContentLoaded", function () {
+   const hash = window.location.hash.substring(1);
+   if (hash){
+    document.querySelectorAll(".recipe-article").forEach(article =>{
+        article.style.display = 'none';
+    });
+    const target = document.getElementById(hash);
+    if (target){
+        target.style.display = "block"
+    }
+
+    document.querySelectorAll(".recipe-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+    const activeBtn = document.querySelector(`[data-target="${hash}"]`);
+    if (activeBtn){
+        activeBtn.classList.add("active");
+    }
+   } 
+});
