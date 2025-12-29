@@ -42,16 +42,3 @@ function menuToggle(){
 menuToggle();
 
 
-
-document.addEventListener("DOMContentLoaded", function () {
-   const hash = window.location.hash.substring(1);
-   if (hash){
-    document.querySelectorAll(".full-article").forEach(article =>{
-        article.style.display = 'none';
-    });
-    const target = document.getElementById(hash);
-    if (target){
-        target.style.display = "block"
-    }
-} 
-});
