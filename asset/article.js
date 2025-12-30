@@ -42,3 +42,18 @@ function menuToggle(){
 menuToggle();
 
 
+window.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const articleId = params.get("open");
+
+    if (articleId) {
+      // find the existing Read More button that opens this article
+      const btn = document.querySelector(
+        `[onclick*="${articleId}"]`
+      );
+
+      if (btn) {
+        btn.click();
+      }
+    }
+  });
