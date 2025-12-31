@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./blog-img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Exploring traditional recipes, local ingredients, and street food culture from around the world." />
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="nav-wrap" id="navWrap">
+                <a class="brand" href="#">
+                    <div class="logo">TW</div>
+                    <div>
+                        <h1>Taste the World</h1>
+                        <div class="muted" style="font-size:12px">Discover Local Flavors</div>
+                    </div>
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+                    ☰
+                </button>
+
+                <nav class="primary" id="primaryNav" role="navigation" aria-label="Main">
+                    <a href="index.html">Back to Home</a>
+                </nav>
+            </div>
+        </header>
+        <div class="header">
+            <h1>Get In Touch</h1>
+            <p>Have a recipe to share or want to collaborate? Let's talk!</p>
+        </div>
+
+        <div class="content">
+            <!-- Contact Form Section -->
+            <div class="form-section">
+                <h2>Send us a Message</h2>
+                <form  autocomplete="on" action="https://formsubmit.co/adebolaogunsanya75@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" onclick="alert('Success! Kindly complete CAPTCHA')">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="social-section">
+                <h2>Connect With Us</h2>
+                <div class="social-links">
+                    <a href="https://github.com/Debola75" title="GitHub" target="_blank">
+                        <li class="fab fa-github"></li>
+                    </a>
+                    <a href="https://wa.me/+2349049092401" title="WhatsApp" target="_blank">
+                        <li class="fab fa-whatsapp"></li>
+                    </a>
+                    <a href="https://linkedin.com/in/adebola-ogunsanya-829a52293" title="LinkedIn" target="_blank">
+                        <li class="fab fa-linkedin"></li>
+                    </a>
+                    <a href="https://snapchat.com/t/TVoJiATK" title="Twitter" target="_blank">
+                        <li class="fab fa-snapchat"></li>
+                    </a>
+                    <a href="mailto:adebolaogunsanya75@gmail.com" title="Email">
+                        <span>✉️</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941592346047!3d37.77492977138239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c5480001%3A0x82b5b311e8757e0!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./asset/contact.js"></script>
+</body>
+</html>
